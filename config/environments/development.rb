@@ -69,5 +69,12 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   config.action_mailer.preview_path = "#{Rails.root}/test/mailers/previews"
 
+  Rails.application.configure do
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.smtp_settings = {
+      address: 'localhost',
+      port: 1025
+    }
+  end
  
 end
