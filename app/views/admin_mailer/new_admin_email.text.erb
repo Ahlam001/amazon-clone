@@ -1,0 +1,18 @@
+Today's Summary
+
+new users
+
+
+<% @users.each do |user| %>
+Name: <%= user.name %>
+Email: <%= user.email %>
+
+<% end %>
+
+new items<br>
+
+
+<% @items.each do |item| %>
+<p>Name: <%= item.name %>
+<p>Price: <%= item.price %>
+<% end %>
